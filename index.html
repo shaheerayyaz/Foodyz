@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foodyz - Where Every Slice Counts</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navbar -->
+<header class="navbar">
+  <div class="logo">Foodyz</div>
+
+  <div class="menu-toggle" id="mobile-menu">
+    &#9776;
+  </div>
+
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#special">Special</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#reservation">Reservation</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+
+
+  <!-- Hero Section -->
+  <nav class="hero-bg">
+    <section class="hero">
+      <div class="overlay">
+        <h1>Taste the Best Pizza in Town!</h1>
+        <p>Foodyz - Where Every Slice Counts 🍕🍔<br>Serving Hot in Your Area</p>
+      </div>
+    </section>
+  </nav>
+
+<!-- About Section -->
+<section class="about" id="about" style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 300px;">
+    <img src="images/about_foodyz.png" alt="Inside Foodyz" class="featured-img" style="height: 30vh; width: 30vh; border-radius: 50%; object-fit: cover; ">
+  </div>
+  <div style="flex: 1 ; min-width: 300px;">
+    <h2>About Foodyz</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, exercitationem aliquid quis quos fuga blanditiis architecto ab corporis fugit deleniti nostrum pariatur.</p>
+  </div>
+
+</section>
+
+<!-- Today's Special -->
+<section class="special" id="special">
+  <h2>Today's Special</h2>
+  <div style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap; justify-content: center;">
+    <img src="images/todays_pizza.jpg" alt="Today's Special Pizza" class="featured-img" style="width: 400px; height: 300px; border-radius: 12px;">
+    <div style="max-width: 400px; text-align: left;">
+      <h3 style="color: #ffd700;">Deluxe Pepperoni Pizza</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. A delicious classic loaded with double pepperoni and cheese.</p>
+      <p><strong>Price:</strong> $9.99</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Menu Highlights -->
+  <section class="menu" id="menu">
+    <h2>Popular Items</h2>
+    <div class="menu-items">
+      <div class="menu-card">
+        <img src="images/pizza.jpg" alt="Pizza Margherita" >
+        <p>Pizza Margherita - $7.99</p>
+      </div>
+      <div class="menu-card">
+        <img src="images/burger.jpg" alt="Local Burger">
+        <p>Cheesy Burger - $6.49</p>
+      </div>
+      <div class="menu-card">
+        <img src="images/chicken_wrap.jpg" alt="Chicken Wrap">
+        <p>Chicken Wrap - $5.99</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order Now Section -->
+  <section class="order-now" id="order">
+    <h2>Order Now</h2>
+    <form class="order-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <input type="text" placeholder="Your Address" required />
+      <select required>
+        <option value="">Select Item</option>
+        <option value="pizza">Pizza Margherita</option>
+        <option value="burger">Cheesy Burger</option>
+        <option value="wrap">Chicken Wrap</option>
+      </select>
+      <input type="number" placeholder="Quantity" min="1" required />
+      <button type="submit">Place Order</button>
+    </form>
+  </section>
+
+  <!-- Reservation Section -->
+  <section class="reservation" id="reservation">
+    <h2>Book a Table</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="datetime-local" required />
+      <input type="time" required />
+      <button type="submit">Reserve Now</button>
+    </form>
+  </section>
+
+  <!-- Opening Hours -->
+  <section class="hours" id="hours">
+    <h2>Opening Hours</h2>
+    <p>Mon – Sun: 11:00 AM – 11:00 PM</p>
+  </section>
+
+  <!-- Contact Info -->
+  <footer class="footer" id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: (123) 456-7890</p>
+    <p>Email: contact@foodyz.com</p>
+    <p>Address: 123 Foodyz Street, Food City</p>
+  </footer>
+
+
+
+<script>
+  const menuToggle = document.getElementById('mobile-menu');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
